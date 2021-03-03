@@ -35,15 +35,27 @@
 
 	<script>
 		let theme_changer = document.querySelector(".theme-changer");
-		theme_changer.addEventListener("click", (ev)=>{
-			let light = document.body.classList.contains("theme-light");
-			let dark = document.body.classList.contains("theme-dark");
-			if (light) {
-				document.body.classList.replace("theme-light", "theme-dark");
-			} else if (dark){
-				document.body.classList.replace("theme-dark", "theme-light");
+		const body = document.body;
+		let theme = window.localStorage.getItem("theme");
+		if (theme) {
+			if (theme == "light") {
+				body.classList.add("theme-light");
+				body.classList.remove("theme-dark");
+			}
+		} else {
+			window.localStorage.setItem("theme", "dark");
+		}
+
+		theme_changer.addEventListener("click", (ev) => {
+			theme = window.localStorage.getItem("theme");
+			if (theme == "dark" ) {
+				body.classList.add("theme-light");
+				body.classList.remove("theme-dark");
+				window.localStorage.setItem("theme", "light");
 			} else {
-				document.body.classList.add("theme-dark");
+				body.classList.add("theme-dark");
+				body.classList.remove("theme-light");
+				window.localStorage.setItem("theme", "dark");
 			}
 		});
 	</script>

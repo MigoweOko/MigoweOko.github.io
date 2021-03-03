@@ -156,3 +156,13 @@ body {
   -webkit-filter: brightness(133%);
           filter: brightness(133%);
 }
+
+body.theme-light .theme-changer:hover {
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+}
+
+body.theme-light .theme-changer:active {
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+}
