@@ -93,6 +93,7 @@ body {
   height: 2.4em;
   width: 2.4em;
   margin: 0.4em;
+  cursor: pointer;
 }
 
 .header .menubar .hamburger .bar {
