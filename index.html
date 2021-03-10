@@ -58,6 +58,13 @@
 				window.localStorage.setItem("theme", "dark");
 			}
 		});
+
+		let hamburger = document.querySelector(".hamburger");
+		const togglex = () => {
+			hamburger.classList.toggle("x");
+		};
+		hamburger.addEventListener("click", togglex);
 	</script>
 </body>
 </html>
+

@@ -90,8 +90,9 @@ body {
 }
 
 .header .menubar .hamburger {
-  height: 3.2em;
-  width: 3.2em;
+  height: 2.4em;
+  width: 2.4em;
+  margin: 0.4em;
 }
 
 .header .menubar .hamburger .bar {
@@ -99,18 +100,38 @@ body {
   height: 0.2em;
   background-color: var(--text);
   border-radius: 0.1em;
+  -webkit-transition: opacity 200ms, -webkit-transform 200ms;
+  transition: opacity 200ms, -webkit-transform 200ms;
+  transition: opacity 200ms, transform 200ms;
+  transition: opacity 200ms, transform 200ms, -webkit-transform 200ms;
 }
 
 .header .menubar .hamburger .top {
-  margin: 1.1em 1.0em 0.2em 1.0em;
+  margin: 0.7em 0.6em 0.2em 0.6em;
 }
 
 .header .menubar .hamburger .mid {
-  margin: 0.2em 1.0em 0.2em 1.0em;
+  margin: 0.2em 0.6em 0.2em 0.6em;
 }
 
 .header .menubar .hamburger .bot {
-  margin: 0.2em 1.0em 1.1em 1.0em;
+  margin: 0.2em 0.6em 0.7em 0.6em;
+}
+
+.header .menubar .hamburger.x .top {
+  -webkit-transform: translate(0em, 0.4em) rotate(135deg);
+          transform: translate(0em, 0.4em) rotate(135deg);
+}
+
+.header .menubar .hamburger.x .mid {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  opacity: 0;
+}
+
+.header .menubar .hamburger.x .bot {
+  -webkit-transform: translate(0em, -0.4em) rotate(45deg);
+          transform: translate(0em, -0.4em) rotate(45deg);
 }
 
 .footer {
