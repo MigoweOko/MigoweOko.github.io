@@ -1,3 +1,7 @@
+# Please ignore this readme
+
+***
+
 # Lorem ipsum dolor sit amet.
 Lorem ipsum dolor sit amet.
 ## Lorem ipsum dolor sit amet.
@@ -29,6 +33,5 @@ int main(int argc, const char** argv) {
 }
 ```
 
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media 
+- [x] Lorem ipsum dolor sit amet.
+- [ ] Lorem ipsum dolor sit amet.
